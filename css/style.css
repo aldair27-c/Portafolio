@@ -293,9 +293,21 @@ img {
     max-width: 380px;
     margin: 0 auto;
 
-    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 20px;
 
-    border: 1px solid var(--border);
+    /* Difuminado de los bordes */
+    -webkit-mask-image: radial-gradient(
+        ellipse 75% 85% at center,
+        black 45%,
+        transparent 100%
+    );
+
+    mask-image: radial-gradient(
+        ellipse 75% 85% at center,
+        black 55%,
+        transparent 100%
+    );
 }
 
 .about-text h3 {
