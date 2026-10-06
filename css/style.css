@@ -260,32 +260,18 @@ img {
     justify-content: center;
 }
 
-.hero-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 330px;
-    height: 330px;
-
-    border: 1px solid rgba(56, 189, 248, 0.4);
-    border-radius: 50%;
-
-    z-index: 0;
-}
 
 .hero-image img {
     position: relative;
     z-index: 1;
 
     width: min(100%, 380px);
-    height: 470px;
+    aspect-ratio: 4 / 5;
 
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 16px;
 }
-
 
 /* ================================
    SOBRE MÍ
